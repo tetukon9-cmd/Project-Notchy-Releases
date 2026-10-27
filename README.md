@@ -4,21 +4,27 @@ Notchy adalah notch desktop dengan pengingat minum, agenda, fokus, jadwal sholat
 
 ## Windows
 
-[Rilis Windows 1.2.3](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/tag/v1.2.3) menyediakan installer dan ZIP portable untuk Windows 10/11 x64 dengan .NET Framework 4.8. Keluar dari versi lama melalui ikon tray sebelum membuka versi baru. Profil lokal tidak perlu dihapus.
+[Rilis 1.3.0-preview.2](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/tag/v1.3.0-preview.2) menyediakan [installer Windows](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.2/Notchy-Setup.exe) dan [ZIP portable Windows](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.2/Notchy-v1.3.0-preview.2-portable.zip) untuk Windows 10/11 x64 dengan .NET Framework 4.8. Keluar dari versi lama melalui ikon tray sebelum membuka versi baru. Profil lokal tidak perlu dihapus. [Versi sebelumnya 1.2.3](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/tag/v1.2.3) tetap tersedia.
+
+## Agama & Inspirasi
+
+Windows: **Pengaturan > Agama & inspirasi**. Linux/macOS: **Pengaturan > Agama & konten harian**. Dropdown menyediakan Islam, Kristen Protestan, Katolik, Hindu, Buddha dan Khonghucu. Pada Islam, jadwal/adzan dan hadis dapat dimatikan secara terpisah. Pada agama lain, sholat/adzan/hadis tidak aktif dan bacaan menjadi **Inspirasi**. Inspirasi juga bisa dimatikan. Pilihan tersimpan lokal tanpa mereset hidrasi/agenda.
+
+Inspirasi memuat 35 potongan dari terjemahan sumber public domain, tujuh per agama non-Islam, dan tersedia offline. Reader menyediakan rujukan, teks Inggris, atribusi serta **terjemahan bebas Indonesia oleh Notchy, bukan terjemahan resmi kitab suci**. Penomoran Lun Yu mengikuti edisi Legge. Rujukan dan lisensi disertakan pada paket; rendering Indonesia belum mendapat review ahli agama.
 
 ## Linux dan macOS
 
-[Rilis native 1.3.0-preview.1](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/tag/v1.3.0-preview.1) menyediakan:
+[Rilis 1.3.0-preview.2](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/tag/v1.3.0-preview.2) menyediakan:
 
 | Platform | Unduhan | Kebutuhan |
 | --- | --- | --- |
-| Linux x64 | [tar.gz](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.1/Notchy-v1.3.0-preview.1-linux-x64.tar.gz) | Sistem glibc x64 dengan X11/XWayland, pustaka X11/fontconfig/ICU. Diuji pada Ubuntu 22.04. |
-| Mac Apple Silicon (M-series) | [ZIP ARM64](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.1/Notchy-v1.3.0-preview.1-osx-arm64.zip) | macOS 14 atau lebih baru; diuji pada macOS 15. |
-| Mac Intel | [ZIP x64](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.1/Notchy-v1.3.0-preview.1-osx-x64.zip) | macOS 14 atau lebih baru; diuji pada macOS 15. |
+| Linux x64 | [tar.gz](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.2/Notchy-v1.3.0-preview.2-linux-x64.tar.gz) | Sistem glibc x64 dengan X11/XWayland, pustaka X11/fontconfig/ICU. Diuji pada Ubuntu 22.04. |
+| Mac Apple Silicon (M-series) | [ZIP ARM64](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.2/Notchy-v1.3.0-preview.2-osx-arm64.zip) | macOS 14 atau lebih baru; diuji pada macOS 15. |
+| Mac Intel | [ZIP x64](https://github.com/tetukon9-cmd/Project-Notchy-Releases/releases/download/v1.3.0-preview.2/Notchy-v1.3.0-preview.2-osx-x64.zip) | macOS 14 atau lebih baru; diuji pada macOS 15. |
 
 Ekstrak arsip ke folder baru. Linux: jalankan `./Notchy` dari folder hasil ekstraksi. macOS: aplikasi berada di `Notchy.app`; pertahankan seluruh isinya. Tidak perlu memasang SDK .NET. Arahkan mouse ke notch untuk membuka toolbar ikon; menu Keluar berada pada tray atau halaman Tentang.
 
-Pratinjau ini menyediakan agenda/pengingat lokal, fokus, catatan/pengingat minum, jadwal sholat Indonesia, hadis harian dan maskot kucing. Di Pengaturan, pilih kota serta zona **WIB/WITA/WIT** sebelum pengingat sholat aktif. Internet diperlukan untuk mengambil data baru; cache yang tersedia tetap bisa dibaca. Audio adzan opsional memakai afplay di macOS atau ffplay/mpv yang sudah terpasang di Linux.
+Pratinjau ini menyediakan agenda/pengingat lokal, fokus, catatan/pengingat minum, bacaan sesuai agama dan maskot kucing. Pada pilihan Islam, pilih kota serta zona **WIB/WITA/WIT** sebelum pengingat sholat aktif. Internet diperlukan untuk mengambil data sholat/hadis baru; cache yang tersedia tetap bisa dibaca. Audio adzan opsional memakai afplay di macOS atau ffplay/mpv yang sudah terpasang di Linux.
 
 Media/lirik, metrik sistem, clipboard history, file shelf, UI iCal dan notification center belum tersedia pada port ini. Native Wayland belum didukung. Pengingat ditampilkan melalui notch. Pengujian otomatis pada runner belum menggantikan UAT MacBook ber-notch, multi-monitor, seluruh desktop Linux, sleep/resume atau performa laptop pengguna.
 
